@@ -1,0 +1,16 @@
+
+<div class="container">
+    <button  (click)="togglePara(currentClicks)">Display details</button>
+    <p id="para-content" *ngIf="display" > 
+        Baa, baa black sheep
+        Have you any wool
+        Yes sir, yes sir
+        Three bags full.
+    </p>
+    <div class="total-clicks"  *ngIf="countDisplay" >
+        Total clicks on button Display details : {{totalClicks}}
+    </div>
+</div>
+
+
+
